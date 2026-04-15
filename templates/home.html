@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Insurance System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<!-- 🌙 Dark Mode Toggle -->
+<button class="toggle-btn" onclick="toggleMode()">🌙</button>
+
+<div class="hero">
+
+    <!-- Background Image -->
+    <img src="{{ url_for('static', filename='photo.png') }}" class="hero-img">
+
+    <!-- Overlay Content -->
+    <div class="overlay">
+
+        <h1 class="typing"></h1>
+
+        <p>AI Powered Claim Prediction & Fraud Detection System</p>
+
+        <a href="/app">
+            <button class="start-btn">🚀 Get Started</button>
+        </a>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
